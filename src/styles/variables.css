@@ -1,0 +1,90 @@
+/* src/styles/variables.css */
+
+:root {
+  /* Default Theme: Premium Dark (Futuristic Slate & Royal Indigo) */
+  --hue-accent: 226; /* Royal Indigo */
+  --hue-bg: 220; /* Deep charcoal / slate */
+
+  /* Theme Core Colors - Dark Mode */
+  --color-primary: hsl(var(--hue-accent), 90%, 65%); /* Bright readable indigo */
+  --color-primary-rgb: 92, 124, 250;
+  --color-primary-dark: hsl(var(--hue-accent), 80%, 50%);
+  --color-primary-light: hsl(var(--hue-accent), 95%, 75%);
+
+  --color-bg-base: hsl(var(--hue-bg), 24%, 6%); /* Soft deep black */
+  --color-bg-surface: hsl(var(--hue-bg), 20%, 10%); /* Subtle card layer */
+  --color-bg-card: hsla(var(--hue-bg), 20%, 13%, 0.45);
+  
+  --color-text-primary: hsl(var(--hue-bg), 15%, 96%); /* Clear white */
+  --color-text-secondary: hsl(var(--hue-bg), 10%, 75%); /* Muted cool gray */
+  --color-text-muted: hsl(var(--hue-bg), 8%, 55%); /* Muted slate */
+  
+  --color-border: hsla(0, 0%, 100%, 0.08);
+  
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-blur: blur(20px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+  /* Spacing System */
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 3.5rem;
+  --spacing-hero: 7rem;
+
+  /* Typography */
+  --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.75rem;
+  --font-size-xxl: 2.5rem;
+  --font-size-display: 4rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border Radii */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Theme Overrides - Automatic and Professional */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* High-contrast, clean corporate style */
+    --color-primary: hsl(var(--hue-accent), 85%, 48%); /* Solid dark indigo for contrast */
+    --color-primary-rgb: 26, 54, 219;
+    --color-primary-dark: hsl(var(--hue-accent), 85%, 35%);
+    --color-primary-light: hsl(var(--hue-accent), 75%, 60%);
+
+    --color-bg-base: hsl(var(--hue-bg), 20%, 97%); /* Clean light gray-blue background */
+    --color-bg-surface: hsl(var(--hue-bg), 20%, 93%); /* Darker layer */
+    --color-bg-card: hsla(var(--hue-bg), 20%, 99%, 0.75); /* Clean white card */
+    
+    --color-text-primary: hsl(var(--hue-bg), 25%, 12%); /* Deep charcoal */
+    --color-text-secondary: hsl(var(--hue-bg), 15%, 32%); /* Soft slate */
+    --color-text-muted: hsl(var(--hue-bg), 10%, 50%); /* Mid slate gray */
+    
+    --color-border: hsla(var(--hue-bg), 20%, 10%, 0.08);
+    
+    --glass-bg: rgba(255, 255, 255, 0.7); /* Frosted light glass */
+    --glass-border: 1px solid rgba(0, 0, 0, 0.06);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  }
+}
