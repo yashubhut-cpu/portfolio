@@ -1,13 +1,22 @@
-import React from 'react';
-import './Card.css';
+import "./Card.css";
 
-function Card({ image, title, description, tags = [], link = '#' }) {
+function Card({ image, title, description, tags = [], link = "#" }) {
   return (
     <div className="card glass transition">
       <div className="card-image-container">
-        <img src={image} alt={title} className="card-image transition" loading="lazy" />
+        <img
+          src={image}
+          alt={title}
+          className="card-image transition"
+          loading="lazy"
+        />
         <div className="card-overlay flex-center transition">
-          <a href={link} target="_blank" rel="noopener noreferrer" className="card-link-btn glass transition">
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-link-btn glass transition"
+          >
             View Project
           </a>
         </div>

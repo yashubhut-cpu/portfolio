@@ -6,7 +6,11 @@
   --hue-bg: 220; /* Deep charcoal / slate */
 
   /* Theme Core Colors - Dark Mode */
-  --color-primary: hsl(var(--hue-accent), 90%, 65%); /* Bright readable indigo */
+  --color-primary: hsl(
+    var(--hue-accent),
+    90%,
+    65%
+  ); /* Bright readable indigo */
   --color-primary-rgb: 92, 124, 250;
   --color-primary-dark: hsl(var(--hue-accent), 80%, 50%);
   --color-primary-light: hsl(var(--hue-accent), 95%, 75%);
@@ -14,17 +18,23 @@
   --color-bg-base: hsl(var(--hue-bg), 24%, 6%); /* Soft deep black */
   --color-bg-surface: hsl(var(--hue-bg), 20%, 10%); /* Subtle card layer */
   --color-bg-card: hsla(var(--hue-bg), 20%, 13%, 0.45);
-  
+
   --color-text-primary: hsl(var(--hue-bg), 15%, 96%); /* Clear white */
   --color-text-secondary: hsl(var(--hue-bg), 10%, 75%); /* Muted cool gray */
   --color-text-muted: hsl(var(--hue-bg), 8%, 55%); /* Muted slate */
-  
+
   --color-border: hsla(0, 0%, 100%, 0.08);
-  
+
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-blur: blur(20px);
   --glass-border: 1px solid rgba(255, 255, 255, 0.08);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+
+  /* Navbar Theme Tokens */
+  --navbar-bg: rgba(18, 22, 36, 0.72);
+  --navbar-bg-scrolled: rgba(18, 22, 36, 0.9);
+  --navbar-border-scrolled: rgba(255, 255, 255, 0.16);
+  --navbar-mobile-bg: rgba(17, 20, 31, 0.92);
 
   /* Spacing System */
   --spacing-xxs: 0.25rem;
@@ -36,8 +46,12 @@
   --spacing-xxl: 3.5rem;
   --spacing-hero: 7rem;
 
+  /* Layout */
+  --navbar-height: 4.5rem;
+  --page-max-width: 1200px;
+
   /* Typography */
-  --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-base: "Inter", system-ui, -apple-system, sans-serif;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -68,23 +82,36 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* High-contrast, clean corporate style */
-    --color-primary: hsl(var(--hue-accent), 85%, 48%); /* Solid dark indigo for contrast */
+    --color-primary: hsl(
+      var(--hue-accent),
+      85%,
+      48%
+    ); /* Solid dark indigo for contrast */
     --color-primary-rgb: 26, 54, 219;
     --color-primary-dark: hsl(var(--hue-accent), 85%, 35%);
     --color-primary-light: hsl(var(--hue-accent), 75%, 60%);
 
-    --color-bg-base: hsl(var(--hue-bg), 20%, 97%); /* Clean light gray-blue background */
+    --color-bg-base: hsl(
+      var(--hue-bg),
+      20%,
+      97%
+    ); /* Clean light gray-blue background */
     --color-bg-surface: hsl(var(--hue-bg), 20%, 93%); /* Darker layer */
     --color-bg-card: hsla(var(--hue-bg), 20%, 99%, 0.75); /* Clean white card */
-    
+
     --color-text-primary: hsl(var(--hue-bg), 25%, 12%); /* Deep charcoal */
     --color-text-secondary: hsl(var(--hue-bg), 15%, 32%); /* Soft slate */
     --color-text-muted: hsl(var(--hue-bg), 10%, 50%); /* Mid slate gray */
-    
+
     --color-border: hsla(var(--hue-bg), 20%, 10%, 0.08);
-    
+
     --glass-bg: rgba(255, 255, 255, 0.7); /* Frosted light glass */
     --glass-border: 1px solid rgba(0, 0, 0, 0.06);
     --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+
+    --navbar-bg: rgba(255, 255, 255, 0.75);
+    --navbar-bg-scrolled: rgba(255, 255, 255, 0.94);
+    --navbar-border-scrolled: rgba(0, 0, 0, 0.1);
+    --navbar-mobile-bg: rgba(255, 255, 255, 0.96);
   }
 }

@@ -1,6 +1,5 @@
 /* src/pages/Contact.css */
 .contact-page {
-  padding-top: var(--spacing-hero);
   padding-bottom: var(--spacing-xxl);
 }
 
@@ -30,6 +29,39 @@
 .info-card:hover {
   transform: translateY(-4px);
   border-color: rgba(var(--color-primary-rgb), 0.2);
+}
+
+.collaboration-card {
+  padding: var(--spacing-lg);
+}
+
+.collaboration-card h4 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.collaboration-card ul {
+  list-style: none;
+  display: grid;
+  gap: var(--spacing-sm);
+}
+
+.collaboration-card li {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  position: relative;
+  padding-left: 1rem;
+}
+
+.collaboration-card li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 8px rgba(var(--color-primary-rgb), 0.8);
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
 }
 
 .info-icon {
@@ -154,11 +186,5 @@ textarea.form-input {
 @media (max-width: 576px) {
   .contact-form-wrapper {
     padding: var(--spacing-lg);
-  }
-}
-/* Adjust layout spacing */
-@media (max-width: 1024px) {
-  .contact-page {
-    padding-top: var(--spacing-xxl);
   }
 }

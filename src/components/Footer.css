@@ -1,8 +1,8 @@
 /* src/components/Footer.css */
 .footer {
   margin-top: auto;
-  border-top: var(--glass-border);
-  background: var(--color-bg-card);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, transparent, rgba(10, 12, 22, 0.45));
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   padding: var(--spacing-xl) 0;
@@ -18,6 +18,12 @@
 .footer-copy {
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
+}
+
+.footer-subcopy {
+  margin-top: var(--spacing-xxs);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-xs);
 }
 
 .footer-socials {

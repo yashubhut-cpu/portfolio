@@ -1,8 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Button.css';
+import { Link } from "react-router-dom";
+import "./Button.css";
 
-function Button({ to, href, onClick, type = 'button', children, variant = 'primary', className = '' }) {
+function Button({
+  to,
+  href,
+  onClick,
+  type = "button",
+  children,
+  variant = "primary",
+  className = "",
+}) {
   const classNames = `btn btn-${variant} glass transition ${className}`;
 
   if (to) {
@@ -15,7 +22,12 @@ function Button({ to, href, onClick, type = 'button', children, variant = 'prima
 
   if (href) {
     return (
-      <a href={href} className={classNames} target="_blank" rel="noopener noreferrer">
+      <a
+        href={href}
+        className={classNames}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {children}
       </a>
     );

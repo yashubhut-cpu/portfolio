@@ -1,19 +1,42 @@
-import React from 'react';
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer transition">
       <div className="footer-content container">
-        <p className="footer-copy">© 2026 Yash Bhut. All rights reserved.</p>
+        <div>
+          <p className="footer-copy">
+            © {year} Yash Bhut. Crafted with React & precision.
+          </p>
+          <p className="footer-subcopy">
+            Building reliable digital experiences for ambitious teams.
+          </p>
+        </div>
         <div className="footer-socials">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="footer-link transition">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link transition"
+          >
             GitHub
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-link transition">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link transition"
+          >
             LinkedIn
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-link transition">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link transition"
+          >
             Twitter
           </a>
         </div>

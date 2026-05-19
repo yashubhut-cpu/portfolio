@@ -1,6 +1,5 @@
 /* src/pages/Skills.css */
 .skills-page {
-  padding-top: var(--spacing-hero);
   padding-bottom: var(--spacing-xxl);
 }
 
@@ -13,6 +12,11 @@
 .skills-card {
   padding: var(--spacing-xl);
   text-align: left;
+}
+
+.skills-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--color-primary-rgb), 0.2);
 }
 
 .category-title {
@@ -52,30 +56,60 @@
   border-radius: var(--radius-full);
   overflow: hidden;
   position: relative;
-  border-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.06);
 }
 
 .progress-bar-fill {
   height: 100%;
   border-radius: var(--radius-full);
-  background: linear-gradient(90deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark) 0%,
+    var(--color-primary) 100%
+  );
   box-shadow: 0 0 10px rgba(var(--color-primary-rgb), 0.7);
   animation: loadProgress 1.2s cubic-bezier(0.1, 0.8, 0.3, 1) forwards;
   width: var(--width-percent);
 }
 
 @keyframes loadProgress {
-  from { width: 0%; }
+  from {
+    width: 0%;
+  }
+}
+
+.service-grid {
+  margin-top: var(--spacing-xxl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.service-card {
+  padding: var(--spacing-lg);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h4 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.service-card p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 576px) {
   .skills-card {
     padding: var(--spacing-lg);
-  }
-}
-/* Adjust layout spacing */
-@media (max-width: 1024px) {
-  .skills-page {
-    padding-top: var(--spacing-xxl);
   }
 }

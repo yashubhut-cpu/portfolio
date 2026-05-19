@@ -1,8 +1,8 @@
 /* src/components/Section.css */
 .section-container {
-  padding: var(--spacing-xxl) var(--spacing-lg);
+  padding: var(--spacing-xxl) var(--spacing-lg) var(--spacing-xl);
   margin-top: var(--spacing-xl);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .section-header {
@@ -44,7 +44,7 @@
   .section-container {
     padding: var(--spacing-xl) var(--spacing-md);
   }
-  
+
   .section-title {
     font-size: var(--font-size-xl);
   }

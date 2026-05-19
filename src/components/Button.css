@@ -11,6 +11,12 @@
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-normal),
+    color var(--transition-fast),
+    background var(--transition-fast),
+    border-color var(--transition-fast);
 }
 
 /* Primary Glass Button */
