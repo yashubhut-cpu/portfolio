@@ -16,7 +16,7 @@ function Footer() {
         </div>
         <div className="footer-socials">
           <a
-            href="https://github.com"
+            href="https://github.com/yashubhut-cpu"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link transition"
@@ -24,7 +24,7 @@ function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/yash-bhut/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link transition"
@@ -32,12 +32,20 @@ function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://twitter.com"
+            href="https://www.instagram.com/mr._yash_bhut/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link transition"
           >
-            Twitter
+            Instagram
+          </a>
+          <a
+            href="https://wa.me/918460800817"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link transition"
+          >
+            WhatsApp
           </a>
         </div>
       </div>
