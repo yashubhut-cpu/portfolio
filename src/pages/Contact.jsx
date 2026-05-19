@@ -51,7 +51,7 @@ function Contact() {
               <div className="info-details">
                 <h4>Email Address</h4>
                 <p>
-                  <a href="mailto:yashbhut@example.com">yashbhut@example.com</a>
+                  <a href="mailto:yashubhut@gmail.com">yashubhut@gmail.com</a>
                 </p>
               </div>
             </div>
