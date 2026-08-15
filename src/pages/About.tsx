@@ -1,4 +1,6 @@
 import Section from "../components/Section";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
 import { useIsTablet } from "../hooks/useMediaQuery";
 import { AboutValue, AboutHighlight } from "../types";
 
@@ -55,11 +57,15 @@ function About() {
       className="animate-fade-in"
       style={{ paddingBottom: "var(--space-3xl)" }}
     >
+      <SEO />
+      <StructuredData type="about" />
+
       <Section
         id="about-page"
         badge="About Yash Bhut"
         title="Engineering Resilient Digital Products"
         subtitle="Product-minded software engineer specialized in React, React Native, Node.js, and modern full-stack architectures."
+        headingLevel="h1"
       >
         {/* Bio Card */}
         <div
@@ -69,7 +75,7 @@ function About() {
             marginBottom: "var(--space-2xl)",
           }}
         >
-          <h3
+          <h2
             style={{
               fontSize: "1.5rem",
               fontWeight: 700,
@@ -78,7 +84,7 @@ function About() {
             }}
           >
             Building Software with Attention to Detail
-          </h3>
+          </h2>
           <p
             style={{
               color: "var(--color-text-secondary)",
@@ -128,7 +134,7 @@ function About() {
               <div style={{ fontSize: "1.75rem", marginBottom: "0.5rem" }}>
                 {v.icon}
               </div>
-              <h4
+              <h3
                 style={{
                   fontSize: "1.125rem",
                   fontWeight: 700,
@@ -136,7 +142,7 @@ function About() {
                 }}
               >
                 {v.title}
-              </h4>
+              </h3>
               <p
                 style={{
                   color: "var(--color-text-secondary)",
@@ -151,7 +157,7 @@ function About() {
         </div>
 
         {/* Experience Timeline */}
-        <h3
+        <h2
           style={{
             fontSize: "1.5rem",
             fontWeight: 700,
@@ -161,7 +167,7 @@ function About() {
           }}
         >
           Key Areas of Experience
-        </h3>
+        </h2>
         <div
           style={{
             maxWidth: "800px",
@@ -191,7 +197,7 @@ function About() {
               >
                 {item.period}
               </span>
-              <h4
+              <h3
                 style={{
                   fontSize: "1.25rem",
                   fontWeight: 700,
@@ -200,8 +206,8 @@ function About() {
                 }}
               >
                 {item.role}
-              </h4>
-              <h5
+              </h3>
+              <p
                 style={{
                   fontSize: "0.9375rem",
                   fontWeight: 500,
@@ -210,7 +216,7 @@ function About() {
                 }}
               >
                 {item.company}
-              </h5>
+              </p>
               <p
                 style={{
                   color: "var(--color-text-secondary)",

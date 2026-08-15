@@ -1,0 +1,16 @@
+{
+  "name": "Yash Bhut Portfolio",
+  "short_name": "Yash Bhut",
+  "description": "Full-Stack & React Native Engineer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e121e",
+  "theme_color": "#608afc",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -7,7 +7,10 @@ function Section({
   subtitle,
   children,
   className = "",
+  headingLevel = "h2",
 }: SectionProps) {
+  const HeadingTag = headingLevel;
+
   return (
     <section
       id={id}
@@ -51,7 +54,7 @@ function Section({
               </div>
             )}
             {title && (
-              <h2
+              <HeadingTag
                 style={{
                   fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
                   fontWeight: 700,
@@ -62,7 +65,7 @@ function Section({
                 }}
               >
                 {title}
-              </h2>
+              </HeadingTag>
             )}
             {subtitle && (
               <p

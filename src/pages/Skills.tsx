@@ -1,4 +1,6 @@
 import Section from "../components/Section";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
 import useTheme from "../hooks/useTheme";
 import { useIsTablet } from "../hooks/useMediaQuery";
 
@@ -86,11 +88,15 @@ function Skills() {
       className="animate-fade-in"
       style={{ paddingBottom: "var(--space-3xl)" }}
     >
+      <SEO />
+      <StructuredData type="skills" />
+
       <Section
         id="skills-page"
         badge="Skills & Capabilities"
         title="Technical Stack & Expertise"
         subtitle="Core programming languages, frameworks, libraries, and development tools I work with."
+        headingLevel="h1"
       >
         <div
           style={{

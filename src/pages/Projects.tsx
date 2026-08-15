@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Section from "../components/Section";
 import Card from "../components/Card";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
 import { useIsTablet } from "../hooks/useMediaQuery";
 import { projectsData } from "../data/projectsData";
 import { ProjectCategory } from "../types";
@@ -28,11 +30,15 @@ function Projects() {
       className="animate-fade-in"
       style={{ paddingBottom: "var(--space-3xl)" }}
     >
+      <SEO />
+      <StructuredData type="projects" />
+
       <Section
         id="projects-page"
         badge="Portfolio"
         title="Complete Project Catalog (18 Projects)"
         subtitle="Explore the complete collection of web platforms, mobile applications, backend services, and tools built throughout my career."
+        headingLevel="h1"
       >
         {/* Category Filters */}
         <div

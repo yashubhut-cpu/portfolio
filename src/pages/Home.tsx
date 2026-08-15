@@ -2,6 +2,8 @@ import { useState, FormEvent, ChangeEvent } from "react";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import Section from "../components/Section";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
 import useTheme from "../hooks/useTheme";
 import { useIsTablet, useIsSmallMobile } from "../hooks/useMediaQuery";
 import heroImg from "../assets/hero.png";
@@ -128,6 +130,8 @@ function Home() {
       className="animate-fade-in"
       style={{ paddingBottom: "var(--space-3xl)" }}
     >
+      <SEO />
+      <StructuredData type="home" />
       {/* 1. HERO SECTION */}
       <section
         style={{

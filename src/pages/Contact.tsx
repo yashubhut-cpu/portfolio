@@ -1,6 +1,8 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import Section from "../components/Section";
 import Button from "../components/Button";
+import SEO from "../components/SEO";
+import StructuredData from "../components/StructuredData";
 import { useIsTablet } from "../hooks/useMediaQuery";
 import { ContactFormData, FormStatus } from "../types";
 
@@ -43,11 +45,15 @@ function Contact() {
       className="animate-fade-in"
       style={{ paddingBottom: "var(--space-3xl)" }}
     >
+      <SEO />
+      <StructuredData type="contact" />
+
       <Section
         id="contact-page"
         badge="Contact"
         title="Get In Touch"
         subtitle="Have a software project, engineering team opportunity, or mobile app request? Let's discuss."
+        headingLevel="h1"
       >
         <div
           style={{

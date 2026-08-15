@@ -97,6 +97,7 @@ export interface SectionProps {
   subtitle?: string;
   children?: ReactNode;
   className?: string;
+  headingLevel?: "h1" | "h2" | "h3";
 }
 
 export interface ContactFormData {
