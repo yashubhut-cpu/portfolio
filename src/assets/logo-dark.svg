@@ -1,10 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <linearGradient id="yb-terracotta-dark" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="yb-brand-gradient-dark" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ff6b0a"/>
       <stop offset="100%" stop-color="#e85d04"/>
     </linearGradient>
   </defs>
-  <path fill="url(#yb-terracotta-dark)" d="M72 74H151L256 202L361 74H440L291 258V374H221V258Z"/>
-  <path fill="#FFFFFF" d="M217 214H278C334 214 374 244 374 288C374 315 361 335 338 347C366 359 385 382 385 414C385 466 343 492 282 492H171L217 434H278C304 434 318 425 318 404C318 384 303 375 277 375H264L217 434ZM279 265H267L222 322H279C302 322 314 313 314 294C314 275 302 265 279 265Z"/>
+  
+  <!-- Y Arm & Spine (Vibrant Terracotta Gradient) -->
+  <path fill="url(#yb-brand-gradient-dark)" d="M 112 88 C 112 74.7 122.7 64 136 64 H 180 C 190.6 64 200.4 69.5 205.8 78.6 L 256 156 L 306.2 78.6 C 311.6 69.5 321.4 64 332 64 H 376 C 389.3 64 400 74.7 400 88 C 400 94.7 397.2 101.1 392.2 105.6 L 292 192 V 424 C 292 437.3 281.3 448 268 448 H 244 C 230.7 448 220 437.3 220 424 V 192 L 119.8 105.6 C 114.8 101.1 112 94.7 112 88 Z"/>
+  
+  <!-- Interlocking B Loops (White Accent for Dark Theme) -->
+  <path fill="#FFFFFF" fill-rule="evenodd" d="M 256 112 H 340 C 379.8 112 412 144.2 412 184 C 412 216.5 390.5 244 359 252.8 C 395 262.2 424 294.8 424 336 C 424 378 389.9 412 348 412 H 256 V 364 H 348 C 363.5 364 376 351.5 376 336 C 376 320.5 363.5 308 348 308 H 256 V 260 H 340 C 355.5 260 368 247.5 368 232 C 368 216.5 355.5 204 340 204 H 256 V 112 Z"/>
 </svg>
