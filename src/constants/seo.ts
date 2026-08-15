@@ -12,7 +12,7 @@ export interface PageMetadata {
 export const DEFAULT_SEO: PageMetadata = {
   title: "Yash Bhut – Full-Stack & React Native Engineer",
   description:
-    "Portfolio of Yash Bhut, a product-minded Full-Stack & React Native Engineer based in Gujarat, India. Specialized in React, Next.js, Node.js, and mobile app development.",
+    "Portfolio of Yash Bhut, a product-minded Full-Stack & React Native Engineer based in Gujarat, India, specializing in React, Next.js, Node.js, and mobile app development.",
   keywords: [
     "Yash Bhut",
     "Full-Stack Engineer",
@@ -66,7 +66,7 @@ export const PAGE_SEO: Record<string, PageMetadata> = {
   "/skills": {
     title: "Technical Stack & Expertise – Yash Bhut",
     description:
-      "Detailed overview of Yash Bhut's technical toolkit including React, Next.js, React Native, TypeScript, Node.js, Express, MongoDB, and PostgreSQL.",
+      "Detailed overview of Yash Bhut's technical toolkit, including React, Next.js, React Native, TypeScript, Node.js, Express, MongoDB, and PostgreSQL.",
     keywords: [
       "Yash Bhut Skills",
       "Frontend Stack",

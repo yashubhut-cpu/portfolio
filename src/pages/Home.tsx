@@ -121,7 +121,7 @@ function Home() {
       period: "Product Design Systems",
       role: "UI & Component Architect",
       details:
-        "Designed clean, reusable component design systems that reduced development cycles and ensured responsive consistency across web and mobile viewports.",
+        "Designed clean, reusable design systems that accelerated development cycles and ensured responsive consistency across web and mobile viewports.",
     },
   ];
 
@@ -190,7 +190,7 @@ function Home() {
               }}
             >
               I design and engineer modern web platforms and cross-platform
-              mobile apps. Specialized in{" "}
+              mobile applications, specializing in{" "}
               <strong style={{ color: "var(--color-text-primary)" }}>
                 React, Next.js, React Native, and Node.js
               </strong>{" "}
@@ -234,7 +234,7 @@ function Home() {
             >
               <img
                 src={heroImg}
-                alt="Developer visual workspace"
+                alt="Yash Bhut visual workspace"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -297,7 +297,7 @@ function Home() {
               }}
             >
               Crafting modular React and Next.js interfaces with structured state
-              management, high Lighthouse performance, and responsive UI
+              management, optimized Lighthouse performance, and responsive UI
               elegance.
             </p>
           </div>
@@ -366,7 +366,7 @@ function Home() {
                 marginBottom: "0.5rem",
               }}
             >
-              Cross-Platform Mobility
+              Mobile Engineering
             </h3>
             <p
               style={{
@@ -376,7 +376,7 @@ function Home() {
               }}
             >
               Developing iOS and Android mobile applications using React Native CLI
-              and Expo Go with smooth animations and native feature access.
+              and Expo Go with smooth animations and native feature integration.
             </p>
           </div>
         </div>
@@ -711,7 +711,7 @@ function Home() {
                     color: "var(--color-text-primary)",
                   }}
                 >
-                  Full-time roles & Select Contracts
+                  Full-Time Roles & Select Contracts
                 </span>
               </div>
             </div>

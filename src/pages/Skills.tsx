@@ -93,7 +93,7 @@ function Skills() {
         id="skills-page"
         badge="Skills & Capabilities"
         title="Technical Stack & Expertise"
-        subtitle="Core programming languages, frameworks, libraries, and development tools I work with."
+        subtitle="Core programming languages, frameworks, libraries, and development tools I use daily to build modern web and mobile applications."
         headingLevel="h1"
       >
         <div

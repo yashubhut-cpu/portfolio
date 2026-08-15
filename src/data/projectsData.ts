@@ -39,7 +39,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "MHC Healthcare Admin Panel (mhc-admin)",
     description:
-      "Comprehensive administrative portal for Men's Health Clinic managing doctor schedules, patient EMR records, digital prescriptions, and billing pipelines.",
+      "Comprehensive administrative portal for Men's Health Clinic, designed to manage doctor schedules, patient EMR records, digital prescriptions, and billing workflows.",
     tags: ["React.js", "Material UI", "Redux Toolkit", "Chart.js"],
     category: "Frontend",
     link: "#",
@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "MHC Patient Telehealth App (mhc-mobile-app)",
     description:
-      "Cross-platform patient mobile application enabling secure appointment bookings, virtual telehealth consultations, and digital health record access.",
+      "Cross-platform patient mobile application enabling secure appointment scheduling, virtual telehealth consultations, and digital health record access.",
     tags: ["React Native CLI", "Expo Go", "TypeScript", "Redux"],
     category: "Mobile",
     link: "#",
@@ -65,7 +65,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "MHC Desktop Web Portal & PCA (mhc-pca)",
     description:
-      "Desktop web portal allowing patients to complete medical self-assessments, inspect clinical records, and manage billing details online.",
+      "Desktop web portal allowing patients to complete medical self-assessments, access clinical records, and manage billing details online.",
     tags: ["Next.js", "React", "REST API", "Tailwind CSS"],
     category: "Full-Stack",
     link: "#",
@@ -78,7 +78,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "RingsReady AI Voice Agent & APIs (RingReady)",
     description:
-      "Operational management console & backend API service for AI voice receptionist agents, enabling call log tracking, script editors, and custom routing.",
+      "Operational management console & backend API service for AI voice receptionist agents, enabling call log tracking, script editing, and custom call routing.",
     tags: ["Next.js", "React", "Node.js", "WebSockets"],
     category: "Full-Stack",
     link: "#",
@@ -117,7 +117,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "ZCRM Backend API Integration (ZCRM-APIs)",
     description:
-      "Microservice backend API integration engine connecting CRM platforms with third-party webhooks, lead distribution pipelines, and automated reporting.",
+      "Microservice backend engine connecting CRM platforms with third-party webhooks, lead distribution pipelines, and automated reporting.",
     tags: ["Node.js", "Express.js", "REST APIs", "CRM Integration"],
     category: "Backend",
     link: "#",
@@ -143,7 +143,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "AksharArt Commercial Portal (AksharArt-Portal)",
     description:
-      "Logistics and harvest tracking dashboard for commercial berry growers, logging field hours, fruit yield metrics, and retail distribution.",
+      "Logistics and harvest tracking dashboard for commercial berry growers, tracking field hours, fruit yield metrics, and retail distribution operations.",
     tags: ["React.js", "Tailwind CSS", "Recharts", "REST Integration"],
     category: "Frontend",
     link: "#",
@@ -156,7 +156,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "FWG HR Assistant App (fwg-app)",
     description:
-      "Lightweight employee HR companion app enabling check-in logs, time tracking, vacation requests, and corporate memo notifications.",
+      "Lightweight employee HR companion app enabling check-in logging, time tracking, vacation requests, and corporate announcements.",
     tags: ["React Native CLI", "JavaScript", "Context API", "Local Storage"],
     category: "Mobile",
     link: "#",
@@ -169,7 +169,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "Invoice Generator Tool (invoice-generator)",
     description:
-      "Dynamic commercial invoice generation utility enabling businesses to construct, preview, and export itemized invoices into PDF format.",
+      "Dynamic commercial invoice generation utility enabling businesses to create, preview, and export itemized invoices to PDF format.",
     tags: ["React.js", "JavaScript", "CSS3", "Local Storage"],
     category: "Frontend",
     link: "#",
@@ -182,7 +182,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "Online Lottery Portal (lottery-site)",
     description:
-      "Web application displaying real-time lottery draw results, winning number archives, and ticket verification calculators.",
+      "Web application displaying real-time lottery draw results, winning number archives, and ticket verification tools.",
     tags: ["Next.js", "React", "Tailwind CSS", "REST API"],
     category: "Full-Stack",
     link: "#",
@@ -195,7 +195,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "Lottery Companion Mobile App (lottery-app)",
     description:
-      "Mobile application providing users with instant notifications for lottery draw outcomes, winning ticket checks, and historical analytics.",
+      "Mobile application providing users with instant notifications for lottery draw outcomes, ticket verification, and historical draw analytics.",
     tags: ["React Native", "JavaScript", "React Navigation", "API Sync"],
     category: "Mobile",
     link: "#",
@@ -208,7 +208,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "RBX Counter & Exchange App (RBXCounter)",
     description:
-      "Utility companion app allowing fans to compute virtual currency exchanges, log achievements, and participate in trivia games.",
+      "Utility companion app allowing users to calculate virtual currency exchanges, track achievements, and participate in interactive trivia.",
     tags: ["React Native CLI", "JavaScript", "Google AdMob", "Context API"],
     category: "Mobile",
     link: "#",
@@ -221,7 +221,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "FFSkin Mobile Application (FFSkin)",
     description:
-      "Mobile utility app for game skin visualization, providing diamond calculators, configuration previews, and interactive toolkits.",
+      "Mobile utility app for game skin visualization, offering diamond calculators, configuration previews, and interactive toolkits.",
     tags: ["React Native CLI", "JavaScript", "AdMob SDK", "React Navigation"],
     category: "Mobile",
     link: "#",
@@ -234,7 +234,7 @@ export const projectsData: Project[] = [
     isLogo: false,
     title: "IT Corporate Services Website (it-website / Website)",
     description:
-      "High-performance, SEO-optimized corporate marketing website designed to present IT consulting services, portfolio highlights, and lead capture.",
+      "High-performance, SEO-optimized corporate marketing website designed to showcase IT consulting services, portfolio highlights, and lead generation tools.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
     category: "Frontend",
     link: "#",
@@ -247,7 +247,7 @@ export const projectsData: Project[] = [
     isLogo: true,
     title: "Mobile UI/UX Design System",
     description:
-      "High-fidelity UI mockups, interactive prototypes, and reusable design systems created for next-generation web and mobile products.",
+      "High-fidelity UI mockups, interactive prototypes, and reusable component libraries created for next-generation web and mobile products.",
     tags: ["Figma", "UI/UX Design", "Wireframes", "Design System"],
     category: "Design",
     link: "#",

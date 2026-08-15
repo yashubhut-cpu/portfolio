@@ -10,19 +10,19 @@ function About() {
   const values: AboutValue[] = [
     {
       icon: "🎯",
-      title: "Clarity over complexity",
+      title: "Clarity Over Complexity",
       detail:
         "I build scalable systems with clean architecture so teams can iterate rapidly without incurring technical debt.",
     },
     {
       icon: "⚡",
-      title: "Performance by default",
+      title: "Performance by Default",
       detail:
-        "Fast load times, responsive UI render pipelines, and optimized API payloads are built into every release.",
+        "Fast load times, smooth UI rendering, and optimized API payloads are built into every release.",
     },
     {
       icon: "🤝",
-      title: "Product ownership",
+      title: "Product Ownership",
       detail:
         "I care deeply about real user outcomes, working closely with founders, designers, and engineering teams.",
     },
@@ -48,7 +48,7 @@ function About() {
       role: "API & Data Services",
       company: "Node.js & Database Systems",
       description:
-        "Designing high-throughput API endpoints, MongoDB/PostgreSQL database schemas, and secure user authentication pipelines.",
+        "Designing high-throughput API endpoints, MongoDB/PostgreSQL database schemas, and secure user authentication systems.",
     },
   ];
 
@@ -64,7 +64,7 @@ function About() {
         id="about-page"
         badge="About Yash Bhut"
         title="Engineering Resilient Digital Products"
-        subtitle="Product-minded software engineer specialized in React, React Native, Node.js, and modern full-stack architectures."
+        subtitle="Product-minded software engineer specializing in React, React Native, Node.js, and modern full-stack architectures."
         headingLevel="h1"
       >
         {/* Bio Card */}

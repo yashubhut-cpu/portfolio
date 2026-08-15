@@ -52,7 +52,7 @@ function Contact() {
         id="contact-page"
         badge="Contact"
         title="Get In Touch"
-        subtitle="Have a software project, engineering team opportunity, or mobile app request? Let's discuss."
+        subtitle="Have a software project, engineering role opportunity, or mobile app inquiry? Let's discuss."
         headingLevel="h1"
       >
         <div
@@ -213,7 +213,7 @@ function Contact() {
                     color: "var(--color-text-primary)",
                   }}
                 >
-                  Full-Time Software Roles & Freelance Projects
+                  Full-Time Engineering Roles & Select Contracts
                 </span>
               </div>
             </div>
