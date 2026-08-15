@@ -1,10 +1,34 @@
 {
   "files": {
-    "main.js": "/static/js/main.a39848a4.js",
+    "main.css": "/static/css/main.fa5dd59b.css",
+    "main.js": "/static/js/main.36c0dc5a.js",
+    "static/media/ringsready.svg": "/static/media/ringsready.b20d2f65d1e30eb27aacdf6fb82fa840.svg",
+    "static/media/ffskin.png": "/static/media/ffskin.61ecdddfc9d76fa9395b.png",
+    "static/media/aksharart.svg": "/static/media/aksharart.e6b04f5c521d7dcd8b839f1c22fcb1e5.svg",
+    "static/media/fwg.png": "/static/media/fwg.85de3c5bd5c0e203218f.png",
+    "static/media/hero.png": "/static/media/hero.b96028df7483c3b68233.png",
+    "static/media/lottery-app.png": "/static/media/lottery-app.d98be7eb9ea6efacb90a.png",
+    "static/media/lottery-site.png": "/static/media/lottery-site.d98be7eb9ea6efacb90a.png",
+    "static/media/it-website.jpg": "/static/media/it-website.c955f36f60d5bc99bb23.jpg",
+    "static/media/fitnova.png": "/static/media/fitnova.c70910f50a02908d7a5a.png",
+    "static/media/phs.png": "/static/media/phs.2bb15bbf3ac0726575c6.png",
+    "static/media/rbxcounter.png": "/static/media/rbxcounter.85c51120ced631382f02.png",
+    "static/media/ozshut.png": "/static/media/ozshut.4127efe73a4672ba011d.png",
+    "static/media/mhc-pca.png": "/static/media/mhc-pca.620e578b8d8e91a17b75.png",
+    "static/media/mhc-mobile-app.png": "/static/media/mhc-mobile-app.f3f44375c1554a9e4c3d.png",
+    "static/media/mhc-admin.svg": "/static/media/mhc-admin.ab1f6c52a0c0a967f82ecbb28a51981d.svg",
+    "static/media/invoice-generator.svg": "/static/media/invoice-generator.7c235ee1b66a47eb36932f74aacf3b74.svg",
+    "static/media/bct.svg": "/static/media/bct.92889520fee7c7d61444303d2d95980c.svg",
+    "static/media/design-system.svg": "/static/media/design-system.cb3c37ae64475bf10c3f61cd22668478.svg",
+    "static/media/zcrm.svg": "/static/media/zcrm.ab21731192a1afea2d71cc757b48f031.svg",
+    "static/media/logo-light.svg": "/static/media/logo-light.2e621015985a0c4e902062c197fa8619.svg",
+    "static/media/logo-dark.svg": "/static/media/logo-dark.42e0090bc29c794706fbf4d870d0b4c1.svg",
     "index.html": "/index.html",
-    "main.a39848a4.js.map": "/static/js/main.a39848a4.js.map"
+    "main.fa5dd59b.css.map": "/static/css/main.fa5dd59b.css.map",
+    "main.36c0dc5a.js.map": "/static/js/main.36c0dc5a.js.map"
   },
   "entrypoints": [
-    "static/js/main.a39848a4.js"
+    "static/css/main.fa5dd59b.css",
+    "static/js/main.36c0dc5a.js"
   ]
 }

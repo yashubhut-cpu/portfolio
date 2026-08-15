@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="zcrmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="glowZcrm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="350" rx="16" fill="url(#zcrmBg)"/>
+
+  <!-- Circuit / Connection Nodes Background -->
+  <g stroke="#6366f1" stroke-opacity="0.12" stroke-width="1.5" fill="none">
+    <path d="M 50 175 L 200 175 L 250 100 L 350 100"/>
+    <path d="M 50 220 L 180 220 L 230 270 L 370 270"/>
+    <path d="M 550 175 L 400 175 L 350 250 L 250 250"/>
+    <circle cx="250" cy="100" r="4" fill="#06b6d4"/>
+    <circle cx="230" cy="270" r="4" fill="#a855f7"/>
+    <circle cx="350" cy="250" r="4" fill="#6366f1"/>
+  </g>
+
+  <!-- API Hub Icon Graphic -->
+  <g filter="url(#glowZcrm)" transform="translate(230, 45)">
+    <!-- Hexagon Frame -->
+    <polygon points="70,10 120,40 120,100 70,130 20,100 20,40" fill="rgba(15, 23, 42, 0.7)" stroke="url(#cyanPurple)" stroke-width="4" stroke-linejoin="round"/>
+    
+    <!-- Code Bracket / Node Graphic -->
+    <path d="M 48 55 L 35 70 L 48 85" fill="none" stroke="#06b6d4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 92 55 L 105 70 L 92 85" fill="none" stroke="#a855f7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="77" y1="52" x2="63" y2="88" stroke="#6366f1" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="300" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="28" letter-spacing="3" fill="#ffffff">
+    ZCRM BACKEND APIs
+  </text>
+
+  <!-- Subtitle Badge -->
+  <rect x="160" y="235" width="280" height="30" rx="15" fill="rgba(99, 102, 241, 0.15)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1"/>
+  <text x="300" y="255" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="12" letter-spacing="1.5" fill="#c084fc">
+    ZOHO CRM MICROSERVICE ENGINE
+  </text>
+</svg>
