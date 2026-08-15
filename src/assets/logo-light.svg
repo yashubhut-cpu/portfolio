@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <linearGradient id="yb-brand-gradient-light" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="yb-y-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#e85d04"/>
       <stop offset="100%" stop-color="#ff6b0a"/>
     </linearGradient>
   </defs>
-  
-  <!-- Y Arm & Spine (Vibrant Terracotta Gradient) -->
-  <path fill="url(#yb-brand-gradient-light)" d="M 112 88 C 112 74.7 122.7 64 136 64 H 180 C 190.6 64 200.4 69.5 205.8 78.6 L 256 156 L 306.2 78.6 C 311.6 69.5 321.4 64 332 64 H 376 C 389.3 64 400 74.7 400 88 C 400 94.7 397.2 101.1 392.2 105.6 L 292 192 V 424 C 292 437.3 281.3 448 268 448 H 244 C 230.7 448 220 437.3 220 424 V 192 L 119.8 105.6 C 114.8 101.1 112 94.7 112 88 Z"/>
-  
-  <!-- Interlocking B Loops (Dark Accent for Light Theme) -->
-  <path fill="#111827" fill-rule="evenodd" d="M 256 112 H 340 C 379.8 112 412 144.2 412 184 C 412 216.5 390.5 244 359 252.8 C 395 262.2 424 294.8 424 336 C 424 378 389.9 412 348 412 H 256 V 364 H 348 C 363.5 364 376 351.5 376 336 C 376 320.5 363.5 308 348 308 H 256 V 260 H 340 C 355.5 260 368 247.5 368 232 C 368 216.5 355.5 204 340 204 H 256 V 112 Z"/>
+
+  <!-- Dominant Bold Y Monogram (Primary Focal Highlight - Terracotta Gradient) -->
+  <path fill="url(#yb-y-grad-light)" d="M 88 88 C 88 74.7 98.7 64 112 64 H 160 C 171.6 64 182.4 70.1 188.3 80.2 L 256 196 L 323.7 80.2 C 329.6 70.1 340.4 64 352 64 H 400 C 413.3 64 424 74.7 424 88 C 424 94.6 421.3 101 416.5 105.6 L 292 224 V 424 C 292 437.3 281.3 448 268 448 H 244 C 230.7 448 220 437.3 220 424 V 224 L 95.5 105.6 C 90.7 101 88 94.6 88 88 Z"/>
+
+  <!-- Secondary Complementary B Loops (Dark Accent for Light Theme) -->
+  <path fill="#111827" fill-rule="evenodd" d="M 292 236 H 350 C 378.7 236 402 259.3 402 288 C 402 309.8 388.5 328.5 369.2 336 C 392.5 343.8 410 365.6 410 392 C 410 423.1 384.8 448 353.7 448 H 292 V 408 H 353.7 C 362.5 408 370 400.5 370 391.7 C 370 382.9 362.5 375.4 353.7 375.4 H 292 V 335.4 H 350 C 363.3 335.4 374 324.7 374 311.4 C 374 298.1 363.3 287.4 350 287.4 H 292 V 236 Z"/>
 </svg>

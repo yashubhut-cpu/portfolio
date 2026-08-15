@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8cdae5e3.css",
-    "main.js": "/static/js/main.30ec7e45.js",
+    "main.js": "/static/js/main.6983b2ef.js",
     "static/media/ringsready.svg": "/static/media/ringsready.b20d2f65d1e30eb27aacdf6fb82fa840.svg",
     "static/media/ffskin.png": "/static/media/ffskin.61ecdddfc9d76fa9395b.png",
     "static/media/aksharart.svg": "/static/media/aksharart.e6b04f5c521d7dcd8b839f1c22fcb1e5.svg",
@@ -21,14 +21,14 @@
     "static/media/bct.svg": "/static/media/bct.92889520fee7c7d61444303d2d95980c.svg",
     "static/media/design-system.svg": "/static/media/design-system.cb3c37ae64475bf10c3f61cd22668478.svg",
     "static/media/zcrm.svg": "/static/media/zcrm.ab21731192a1afea2d71cc757b48f031.svg",
+    "static/media/logo-light.svg": "/static/media/logo-light.50b1f1cf707e0139fb3391657f3ec310.svg",
+    "static/media/logo-dark.svg": "/static/media/logo-dark.14c94ddde1eb3596bf1f1fa2dfc8349c.svg",
     "index.html": "/index.html",
-    "static/media/logo-light.svg": "/static/media/logo-light.33b458c430d11fc5caab7abedebf05c7.svg",
-    "static/media/logo-dark.svg": "/static/media/logo-dark.4e75d136745f393a98a4bed4395fd433.svg",
     "main.8cdae5e3.css.map": "/static/css/main.8cdae5e3.css.map",
-    "main.30ec7e45.js.map": "/static/js/main.30ec7e45.js.map"
+    "main.6983b2ef.js.map": "/static/js/main.6983b2ef.js.map"
   },
   "entrypoints": [
     "static/css/main.8cdae5e3.css",
-    "static/js/main.30ec7e45.js"
+    "static/js/main.6983b2ef.js"
   ]
 }
