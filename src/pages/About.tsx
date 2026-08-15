@@ -69,7 +69,7 @@ function About() {
       >
         {/* Bio Card */}
         <div
-          className="glass-panel"
+          className="locale-card"
           style={{
             padding: "var(--space-xl)",
             marginBottom: "var(--space-2xl)",
@@ -77,6 +77,7 @@ function About() {
         >
           <h2
             style={{
+              fontFamily: "var(--font-heading)",
               fontSize: "1.5rem",
               fontWeight: 700,
               marginBottom: "var(--space-md)",
@@ -96,7 +97,7 @@ function About() {
             I am a full-stack engineer based in India with a strong focus on
             building fast, reliable, and beautifully polished software. My
             primary expertise spans{" "}
-            <strong>
+            <strong style={{ color: "var(--color-text-primary)" }}>
               React, Next.js, React Native, Node.js, Express, and MongoDB/SQL
               databases
             </strong>
@@ -128,14 +129,28 @@ function About() {
           {values.map((v) => (
             <div
               key={v.title}
-              className="glass-panel"
+              className="locale-card"
               style={{ padding: "var(--space-xl)" }}
             >
-              <div style={{ fontSize: "1.75rem", marginBottom: "0.5rem" }}>
+              <div
+                style={{
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "var(--radius-md)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: "1.5rem",
+                  marginBottom: "var(--space-md)",
+                }}
+              >
                 {v.icon}
               </div>
               <h3
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "1.125rem",
                   fontWeight: 700,
                   marginBottom: "0.5rem",
@@ -159,7 +174,8 @@ function About() {
         {/* Experience Timeline */}
         <h2
           style={{
-            fontSize: "1.5rem",
+            fontFamily: "var(--font-heading)",
+            fontSize: "1.65rem",
             fontWeight: 700,
             textAlign: "center",
             marginBottom: "var(--space-xl)",
@@ -180,14 +196,15 @@ function About() {
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-xl)",
-                borderLeft: "4px solid var(--color-primary)",
+                borderLeft: "5px solid var(--color-primary)",
               }}
             >
               <span
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "0.8125rem",
                   fontWeight: 700,
                   color: "var(--color-primary)",
@@ -199,6 +216,7 @@ function About() {
               </span>
               <h3
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "1.25rem",
                   fontWeight: 700,
                   marginTop: "0.25rem",
@@ -209,8 +227,9 @@ function About() {
               </h3>
               <p
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "0.9375rem",
-                  fontWeight: 500,
+                  fontWeight: 600,
                   color: "var(--color-text-muted)",
                   marginBottom: "0.5rem",
                 }}

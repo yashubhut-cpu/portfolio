@@ -132,6 +132,7 @@ function Home() {
     >
       <SEO />
       <StructuredData type="home" />
+
       {/* 1. HERO SECTION */}
       <section
         style={{
@@ -144,7 +145,7 @@ function Home() {
           className="container"
           style={{
             display: "grid",
-            gridTemplateColumns: isTablet ? "1fr" : "1.1fr 0.9fr",
+            gridTemplateColumns: isTablet ? "1fr" : "1.15fr 0.85fr",
             gap: "var(--space-2xl)",
             alignItems: "center",
             textAlign: isTablet ? "center" : "left",
@@ -153,30 +154,20 @@ function Home() {
           {/* Hero Left Content */}
           <div>
             <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                padding: "0.4rem 1rem",
-                borderRadius: "var(--radius-full)",
-                background: "rgba(var(--color-primary-rgb), 0.1)",
-                border: "1px solid rgba(var(--color-primary-rgb), 0.25)",
-                color: "var(--color-primary)",
-                fontSize: "0.875rem",
-                fontWeight: 600,
-                marginBottom: "var(--space-md)",
-              }}
+              className="locale-badge"
+              style={{ marginBottom: "var(--space-md)" }}
             >
               <span>🚀 Full-Stack & React Native Engineer</span>
             </div>
 
             <h1
               style={{
+                fontFamily: "var(--font-heading)",
                 fontSize: isSmallMobile
                   ? "2.25rem"
                   : isTablet
-                  ? "2.75rem"
-                  : "3.5rem",
+                  ? "2.85rem"
+                  : "3.75rem",
                 fontWeight: 800,
                 lineHeight: "1.1",
                 letterSpacing: "-0.03em",
@@ -200,8 +191,10 @@ function Home() {
             >
               I design and engineer modern web platforms and cross-platform
               mobile apps. Specialized in{" "}
-              <strong>React, Next.js, React Native, and Node.js</strong> backend
-              architectures.
+              <strong style={{ color: "var(--color-text-primary)" }}>
+                React, Next.js, React Native, and Node.js
+              </strong>{" "}
+              backend architectures.
             </p>
 
             <div
@@ -213,15 +206,15 @@ function Home() {
               }}
             >
               <Button href="#projects" variant="primary" size="lg">
-                View All Projects
+                View All Projects ↗
               </Button>
               <Button href="#contact" variant="outline" size="lg">
-                Get In Touch
+                Get In Touch ↗
               </Button>
             </div>
           </div>
 
-          {/* Hero Right Visual */}
+          {/* Hero Right Visual Frame */}
           <div
             style={{
               display: "flex",
@@ -231,13 +224,12 @@ function Home() {
             }}
           >
             <div
-              className="glass-panel animate-float"
+              className="locale-card animate-float"
               style={{
-                padding: "var(--space-md)",
-                borderRadius: "var(--radius-lg)",
-                maxWidth: "380px",
+                padding: "var(--space-sm)",
+                maxWidth: "400px",
                 width: "100%",
-                boxShadow: "0 20px 50px rgba(0,0,0,0.3)",
+                background: isDark ? "var(--color-bg-card)" : "#ffffff",
               }}
             >
               <img
@@ -246,8 +238,9 @@ function Home() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  borderRadius: "var(--radius-md)",
+                  borderRadius: "var(--radius-lg)",
                   display: "block",
+                  border: "1.5px solid var(--color-border)",
                 }}
               />
             </div>
@@ -269,12 +262,26 @@ function Home() {
             gap: "var(--space-lg)",
           }}
         >
-          <div className="glass-panel" style={{ padding: "var(--space-xl)" }}>
-            <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }}>
+          <div className="locale-card" style={{ padding: "var(--space-xl)" }}>
+            <div
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "var(--radius-md)",
+                background: "var(--color-bg-pill)",
+                border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.5rem",
+                marginBottom: "var(--space-md)",
+              }}
+            >
               💎
             </div>
             <h3
               style={{
+                fontFamily: "var(--font-heading)",
                 fontSize: "1.25rem",
                 fontWeight: 700,
                 marginBottom: "0.5rem",
@@ -295,12 +302,26 @@ function Home() {
             </p>
           </div>
 
-          <div className="glass-panel" style={{ padding: "var(--space-xl)" }}>
-            <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }}>
+          <div className="locale-card" style={{ padding: "var(--space-xl)" }}>
+            <div
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "var(--radius-md)",
+                background: "var(--color-bg-pill)",
+                border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.5rem",
+                marginBottom: "var(--space-md)",
+              }}
+            >
               ⚡
             </div>
             <h3
               style={{
+                fontFamily: "var(--font-heading)",
                 fontSize: "1.25rem",
                 fontWeight: 700,
                 marginBottom: "0.5rem",
@@ -320,12 +341,26 @@ function Home() {
             </p>
           </div>
 
-          <div className="glass-panel" style={{ padding: "var(--space-xl)" }}>
-            <div style={{ fontSize: "1.75rem", marginBottom: "0.75rem" }}>
+          <div className="locale-card" style={{ padding: "var(--space-xl)" }}>
+            <div
+              style={{
+                width: "48px",
+                height: "48px",
+                borderRadius: "var(--radius-md)",
+                background: "var(--color-bg-pill)",
+                border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "1.5rem",
+                marginBottom: "var(--space-md)",
+              }}
+            >
               📲
             </div>
             <h3
               style={{
+                fontFamily: "var(--font-heading)",
                 fontSize: "1.25rem",
                 fontWeight: 700,
                 marginBottom: "0.5rem",
@@ -378,7 +413,7 @@ function Home() {
         </div>
 
         <div style={{ textAlign: "center", marginTop: "var(--space-2xl)" }}>
-          <Button to="/projects" variant="outline" size="lg">
+          <Button to="/projects" variant="primary" size="lg">
             Browse All 18 Projects →
           </Button>
         </div>
@@ -401,7 +436,7 @@ function Home() {
           {techCategories.map((cat, idx) => (
             <div
               key={idx}
-              className="glass-panel"
+              className="locale-card"
               style={{ padding: "var(--space-xl)" }}
             >
               <div
@@ -412,9 +447,10 @@ function Home() {
                   marginBottom: "var(--space-lg)",
                 }}
               >
-                <span style={{ fontSize: "1.5rem" }}>{cat.icon}</span>
+                <span style={{ fontSize: "1.6rem" }}>{cat.icon}</span>
                 <h3
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1.25rem",
                     fontWeight: 700,
                     color: "var(--color-text-primary)",
@@ -428,15 +464,14 @@ function Home() {
                   <span
                     key={sIdx}
                     style={{
-                      fontSize: "0.875rem",
-                      fontWeight: 500,
+                      fontFamily: "var(--font-heading)",
+                      fontSize: "0.8125rem",
+                      fontWeight: 700,
                       padding: "0.35rem 0.85rem",
                       borderRadius: "var(--radius-full)",
-                      background: isDark
-                        ? "rgba(255, 255, 255, 0.05)"
-                        : "rgba(0, 0, 0, 0.04)",
-                      border: "1px solid var(--color-border)",
-                      color: "var(--color-text-primary)",
+                      background: "var(--color-bg-pill)",
+                      border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                      color: "var(--color-primary)",
                     }}
                   >
                     {skill}
@@ -467,15 +502,15 @@ function Home() {
           {careerHighlights.map((item, idx) => (
             <div
               key={idx}
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-xl)",
-                position: "relative",
-                borderLeft: "4px solid var(--color-primary)",
+                borderLeft: "5px solid var(--color-primary)",
               }}
             >
               <span
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "0.8125rem",
                   fontWeight: 700,
                   color: "var(--color-primary)",
@@ -489,6 +524,7 @@ function Home() {
               </span>
               <h3
                 style={{
+                  fontFamily: "var(--font-heading)",
                   fontSize: "1.25rem",
                   fontWeight: 700,
                   marginBottom: "0.5rem",
@@ -533,7 +569,7 @@ function Home() {
             }}
           >
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -543,10 +579,11 @@ function Home() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -561,6 +598,8 @@ function Home() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Email
@@ -568,8 +607,9 @@ function Home() {
                 <a
                   href="mailto:yashubhut@gmail.com"
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-primary)",
                   }}
                 >
@@ -579,7 +619,7 @@ function Home() {
             </div>
 
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -589,10 +629,11 @@ function Home() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -607,14 +648,17 @@ function Home() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Location
                 </span>
                 <span
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-text-primary)",
                   }}
                 >
@@ -624,7 +668,7 @@ function Home() {
             </div>
 
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -634,10 +678,11 @@ function Home() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -652,25 +697,28 @@ function Home() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Availability
                 </span>
                 <span
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-text-primary)",
                   }}
                 >
-                  Full-time roles & Select Freelance Contracts
+                  Full-time roles & Select Contracts
                 </span>
               </div>
             </div>
           </div>
 
           {/* Form Side */}
-          <div className="glass-panel" style={{ padding: "var(--space-xl)" }}>
+          <div className="locale-card" style={{ padding: "var(--space-xl)" }}>
             <form
               onSubmit={handleFormSubmit}
               style={{
@@ -684,10 +732,11 @@ function Home() {
                   htmlFor="contact-name"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Name
@@ -703,11 +752,12 @@ function Home() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
@@ -717,10 +767,11 @@ function Home() {
                   htmlFor="contact-email"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Email
@@ -736,11 +787,12 @@ function Home() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
@@ -750,10 +802,11 @@ function Home() {
                   htmlFor="contact-message"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Message
@@ -769,18 +822,19 @@ function Home() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
                     resize: "vertical",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
 
               <Button type="submit" variant="primary" size="lg">
-                Send Message
+                Send Message 🚀
               </Button>
 
               {status === "error" && (
@@ -789,6 +843,7 @@ function Home() {
                     color: "#f87171",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Please fill out all fields before sending.
@@ -800,6 +855,7 @@ function Home() {
                     color: "var(--color-primary)",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Sending message...
@@ -808,9 +864,10 @@ function Home() {
               {status === "success" && (
                 <p
                   style={{
-                    color: "#4ade80",
+                    color: "#10b981",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Thank you! Your message has been sent successfully.

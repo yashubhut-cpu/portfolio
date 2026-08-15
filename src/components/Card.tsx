@@ -12,15 +12,15 @@ function Card({
   github,
 }: CardProps) {
   const handleCardMouseEnter = (e: MouseEvent<HTMLElement>) => {
-    e.currentTarget.style.transform = "translateY(-6px)";
-    e.currentTarget.style.borderColor = "var(--color-border-hover)";
-    e.currentTarget.style.boxShadow = "0 16px 40px rgba(0, 0, 0, 0.35)";
+    e.currentTarget.style.transform = "translateY(-4px)";
+    e.currentTarget.style.borderColor = "var(--color-primary)";
+    e.currentTarget.style.boxShadow = "var(--shadow-retro-hover)";
   };
 
   const handleCardMouseLeave = (e: MouseEvent<HTMLElement>) => {
     e.currentTarget.style.transform = "translateY(0)";
     e.currentTarget.style.borderColor = "var(--color-border)";
-    e.currentTarget.style.boxShadow = "var(--glass-shadow)";
+    e.currentTarget.style.boxShadow = "var(--shadow-retro)";
   };
 
   const handleImageMouseEnter = (e: MouseEvent<HTMLImageElement>) => {
@@ -33,14 +33,13 @@ function Card({
 
   return (
     <article
-      className="glass-panel"
+      className="locale-card"
       style={{
         display: "flex",
         flexDirection: "column",
         height: "100%",
         overflow: "hidden",
-        borderRadius: "var(--radius-lg)",
-        transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        position: "relative",
       }}
       onMouseEnter={handleCardMouseEnter}
       onMouseLeave={handleCardMouseLeave}
@@ -53,9 +52,9 @@ function Card({
             paddingTop: "52%",
             overflow: "hidden",
             background: isLogo
-              ? "linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.07) 100%)"
+              ? "linear-gradient(135deg, rgba(232, 93, 4, 0.05) 0%, rgba(13, 148, 136, 0.08) 100%)"
               : "var(--color-bg-surface)",
-            borderBottom: "1px solid var(--color-border)",
+            borderBottom: "2px solid var(--color-border)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -73,9 +72,9 @@ function Card({
               height: isLogo ? "72%" : "100%",
               objectFit: isLogo ? "contain" : "cover",
               filter: isLogo
-                ? "drop-shadow(0 4px 12px rgba(0,0,0,0.25))"
+                ? "drop-shadow(0 4px 12px rgba(0,0,0,0.15))"
                 : "none",
-              transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+              transition: "transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)",
             }}
             onMouseEnter={handleImageMouseEnter}
             onMouseLeave={handleImageMouseLeave}
@@ -93,10 +92,12 @@ function Card({
       >
         <h3
           style={{
+            fontFamily: "var(--font-heading)",
             fontSize: "1.25rem",
             fontWeight: 700,
             color: "var(--color-text-primary)",
             marginBottom: "var(--space-xs)",
+            lineHeight: "1.3",
           }}
         >
           {title}
@@ -128,12 +129,13 @@ function Card({
                 key={idx}
                 style={{
                   fontSize: "0.75rem",
-                  fontWeight: 600,
+                  fontFamily: "var(--font-heading)",
+                  fontWeight: 700,
                   padding: "0.2rem 0.65rem",
                   borderRadius: "var(--radius-full)",
-                  background: "rgba(var(--color-primary-rgb), 0.08)",
+                  background: "var(--color-bg-pill)",
                   color: "var(--color-primary)",
-                  border: "1px solid rgba(var(--color-primary-rgb), 0.2)",
+                  border: "1px solid rgba(var(--color-primary-rgb), 0.3)",
                 }}
               >
                 {tag}
@@ -148,16 +150,17 @@ function Card({
             alignItems: "center",
             gap: "0.75rem",
             marginTop: "auto",
+            flexWrap: "wrap",
           }}
         >
           {link && link !== "#" && (
             <Button href={link} variant="primary" size="sm">
-              Live Demo
+              Live Demo ↗
             </Button>
           )}
           {github && (
             <Button href={github} variant="outline" size="sm">
-              GitHub
+              GitHub ↗
             </Button>
           )}
         </div>

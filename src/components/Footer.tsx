@@ -7,25 +7,31 @@ function Footer() {
   const isMobile = useIsMobile();
 
   const socialLinks: SocialLink[] = [
-    { name: "GitHub", href: "https://github.com/yashubhut-cpu" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/yash-bhut/" },
-    { name: "Instagram", href: "https://www.instagram.com/mr._yash_bhut/" },
-    { name: "WhatsApp", href: "https://wa.me/918460800817" },
+    { name: "GitHub ↗", href: "https://github.com/yashubhut-cpu" },
+    { name: "LinkedIn ↗", href: "https://www.linkedin.com/in/yash-bhut/" },
+    { name: "Instagram ↗", href: "https://www.instagram.com/mr._yash_bhut/" },
+    { name: "WhatsApp ↗", href: "https://wa.me/918460800817" },
   ];
 
   const handleLinkMouseEnter = (e: MouseEvent<HTMLAnchorElement>) => {
+    e.currentTarget.style.transform = "translate(-2px, -2px)";
+    e.currentTarget.style.boxShadow = "4px 4px 0px #000000";
+    e.currentTarget.style.borderColor = "var(--color-primary)";
     e.currentTarget.style.color = "var(--color-primary)";
   };
 
   const handleLinkMouseLeave = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.currentTarget.style.color = "var(--color-text-secondary)";
+    e.currentTarget.style.transform = "translate(0px, 0px)";
+    e.currentTarget.style.boxShadow = "2px 2px 0px #000000";
+    e.currentTarget.style.borderColor = "var(--color-border)";
+    e.currentTarget.style.color = "var(--color-text-primary)";
   };
 
   return (
     <footer
       style={{
         marginTop: "auto",
-        borderTop: "1px solid var(--color-border)",
+        borderTop: "2px solid var(--color-border)",
         background: "var(--color-bg-surface)",
         padding: "var(--space-xl) 0",
         width: "100%",
@@ -45,9 +51,10 @@ function Footer() {
         <div>
           <p
             style={{
-              fontSize: "0.875rem",
+              fontFamily: "var(--font-heading)",
+              fontSize: "0.9375rem",
               color: "var(--color-text-secondary)",
-              fontWeight: 500,
+              fontWeight: 600,
             }}
           >
             © {year}{" "}
@@ -72,7 +79,7 @@ function Footer() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "1.25rem",
+            gap: "0.75rem",
             flexWrap: "wrap",
             justifyContent: "center",
           }}
@@ -84,10 +91,18 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                fontSize: "0.875rem",
-                fontWeight: 600,
-                color: "var(--color-text-secondary)",
-                transition: "color 0.2s ease",
+                fontFamily: "var(--font-heading)",
+                fontSize: "0.8125rem",
+                fontWeight: 700,
+                color: "var(--color-text-primary)",
+                background: "var(--color-bg-card)",
+                padding: "0.35rem 0.85rem",
+                borderRadius: "var(--radius-full)",
+                border: "1.5px solid var(--color-border)",
+                boxShadow: "2px 2px 0px #000000",
+                transition: "all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                display: "inline-flex",
+                alignItems: "center",
               }}
               onMouseEnter={handleLinkMouseEnter}
               onMouseLeave={handleLinkMouseLeave}

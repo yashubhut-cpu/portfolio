@@ -16,6 +16,13 @@ export default function useTheme(): UseThemeReturn {
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("portfolio-theme", theme);
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        theme === "dark" ? "#0a0d14" : "#fcfbf8"
+      );
+    }
   }, [theme]);
 
   const toggleTheme = () => {

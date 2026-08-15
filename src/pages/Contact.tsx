@@ -71,7 +71,7 @@ function Contact() {
             }}
           >
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -81,10 +81,11 @@ function Contact() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -99,6 +100,8 @@ function Contact() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Email
@@ -106,8 +109,9 @@ function Contact() {
                 <a
                   href="mailto:yashubhut@gmail.com"
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-primary)",
                   }}
                 >
@@ -117,7 +121,7 @@ function Contact() {
             </div>
 
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -127,10 +131,11 @@ function Contact() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -145,14 +150,17 @@ function Contact() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Location
                 </span>
                 <span
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-text-primary)",
                   }}
                 >
@@ -162,7 +170,7 @@ function Contact() {
             </div>
 
             <div
-              className="glass-panel"
+              className="locale-card"
               style={{
                 padding: "var(--space-lg)",
                 display: "flex",
@@ -172,10 +180,11 @@ function Contact() {
             >
               <div
                 style={{
-                  width: "44px",
-                  height: "44px",
+                  width: "48px",
+                  height: "48px",
                   borderRadius: "var(--radius-md)",
-                  background: "rgba(var(--color-primary-rgb), 0.1)",
+                  background: "var(--color-bg-pill)",
+                  border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -190,14 +199,17 @@ function Contact() {
                     fontSize: "0.8125rem",
                     color: "var(--color-text-muted)",
                     display: "block",
+                    fontFamily: "var(--font-heading)",
+                    fontWeight: 600,
                   }}
                 >
                   Open to Work
                 </span>
                 <span
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     color: "var(--color-text-primary)",
                   }}
                 >
@@ -208,7 +220,7 @@ function Contact() {
           </div>
 
           {/* Form */}
-          <div className="glass-panel" style={{ padding: "var(--space-xl)" }}>
+          <div className="locale-card" style={{ padding: "var(--space-xl)" }}>
             <form
               onSubmit={handleSubmit}
               style={{
@@ -222,10 +234,11 @@ function Contact() {
                   htmlFor="contact-page-name"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Name
@@ -241,11 +254,12 @@ function Contact() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
@@ -255,10 +269,11 @@ function Contact() {
                   htmlFor="contact-page-email"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Email
@@ -274,11 +289,12 @@ function Contact() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
@@ -288,10 +304,11 @@ function Contact() {
                   htmlFor="contact-page-message"
                   style={{
                     display: "block",
+                    fontFamily: "var(--font-heading)",
                     fontSize: "0.875rem",
-                    fontWeight: 600,
+                    fontWeight: 700,
                     marginBottom: "0.35rem",
-                    color: "var(--color-text-secondary)",
+                    color: "var(--color-text-primary)",
                   }}
                 >
                   Message
@@ -307,18 +324,19 @@ function Contact() {
                     width: "100%",
                     padding: "0.75rem 1rem",
                     borderRadius: "var(--radius-md)",
-                    border: "1px solid var(--color-border)",
+                    border: "2px solid var(--color-border)",
                     background: "var(--color-bg-base)",
                     color: "var(--color-text-primary)",
                     fontSize: "0.9375rem",
                     outline: "none",
                     resize: "vertical",
+                    fontFamily: "var(--font-body)",
                   }}
                 />
               </div>
 
               <Button type="submit" variant="primary" size="lg">
-                Send Message
+                Send Message 🚀
               </Button>
 
               {status === "error" && (
@@ -327,6 +345,7 @@ function Contact() {
                     color: "#f87171",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Please fill out all fields before sending.
@@ -338,6 +357,7 @@ function Contact() {
                     color: "var(--color-primary)",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Sending message...
@@ -346,9 +366,10 @@ function Contact() {
               {status === "success" && (
                 <p
                   style={{
-                    color: "#4ade80",
+                    color: "#10b981",
                     fontSize: "0.875rem",
                     marginTop: "0.5rem",
+                    fontWeight: 600,
                   }}
                 >
                   Thank you! Your message has been sent successfully.

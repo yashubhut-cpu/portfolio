@@ -30,18 +30,18 @@ function Navbar() {
   ];
 
   const handleToggleMouseEnter = (e: MouseEvent<HTMLButtonElement>) => {
-    e.currentTarget.style.transform = "scale(1.1)";
+    e.currentTarget.style.transform = "scale(1.1) rotate(6deg)";
   };
 
   const handleToggleMouseLeave = (e: MouseEvent<HTMLButtonElement>) => {
-    e.currentTarget.style.transform = "scale(1)";
+    e.currentTarget.style.transform = "scale(1) rotate(0deg)";
   };
 
   return (
     <header
       style={{
         position: "sticky",
-        top: isMobile ? "0.6rem" : "1.2rem",
+        top: isMobile ? "0.5rem" : "1rem",
         width: "100%",
         zIndex: 1000,
         padding: "0 var(--space-md)",
@@ -60,16 +60,16 @@ function Navbar() {
           borderRadius: "var(--radius-full)",
           background: isScrolled
             ? isDark
-              ? "rgba(12, 16, 26, 0.88)"
-              : "rgba(255, 255, 255, 0.92)"
+              ? "rgba(18, 24, 38, 0.95)"
+              : "rgba(255, 255, 255, 0.96)"
             : "var(--color-bg-card)",
-          backdropFilter: "var(--glass-blur)",
-          WebkitBackdropFilter: "var(--glass-blur)",
-          border: "var(--glass-border)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+          border: "2px solid var(--color-border)",
           boxShadow: isScrolled
-            ? "0 10px 30px rgba(0, 0, 0, 0.25)"
-            : "var(--glass-shadow)",
-          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+            ? "var(--shadow-retro-hover)"
+            : "var(--shadow-retro)",
+          transition: "all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)",
         }}
       >
         {/* Brand */}
@@ -78,30 +78,42 @@ function Navbar() {
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: "0.65rem",
+            gap: "0.75rem",
             textDecoration: "none",
           }}
         >
-          <img
-            src={isDark ? logoDark : logoLight}
-            alt="Yash Bhut logo"
+          <div
             style={{
-              width: "36px",
-              height: "36px",
-              objectFit: "contain",
-              display: "block",
+              padding: "0.25rem",
+              borderRadius: "var(--radius-full)",
+              background: "var(--color-bg-pill)",
+              border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
-          />
+          >
+            <img
+              src={isDark ? logoDark : logoLight}
+              alt="Yash Bhut logo"
+              style={{
+                width: "32px",
+                height: "32px",
+                objectFit: "contain",
+                display: "block",
+              }}
+            />
+          </div>
           <span
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "1.125rem",
+              fontSize: "1.2rem",
               fontWeight: 700,
               color: "var(--color-text-primary)",
               letterSpacing: "-0.02em",
             }}
           >
-            Yash Bhut
+            Yash <span style={{ color: "var(--color-primary)" }}>Bhut</span>
           </span>
         </Link>
 
@@ -112,7 +124,7 @@ function Navbar() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                gap: "1.5rem",
+                gap: "0.5rem",
                 listStyle: "none",
               }}
             >
@@ -123,20 +135,22 @@ function Navbar() {
                       href={link.path}
                       style={{
                         fontFamily: "var(--font-heading)",
-                        fontSize: "0.9375rem",
-                        fontWeight: 500,
-                        color: "var(--color-text-secondary)",
-                        padding: "0.4rem 0.75rem",
+                        fontSize: "0.875rem",
+                        fontWeight: 700,
+                        color: "var(--color-text-primary)",
+                        padding: "0.45rem 0.9rem",
                         borderRadius: "var(--radius-full)",
-                        transition: "color 0.2s ease",
+                        transition: "all 0.2s ease",
+                        display: "inline-block",
                       }}
-                      onMouseEnter={(e) =>
-                        (e.currentTarget.style.color = "var(--color-primary)")
-                      }
-                      onMouseLeave={(e) =>
-                        (e.currentTarget.style.color =
-                          "var(--color-text-secondary)")
-                      }
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "var(--color-primary)";
+                        e.currentTarget.style.background = "var(--color-bg-pill)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "var(--color-text-primary)";
+                        e.currentTarget.style.background = "transparent";
+                      }}
                     >
                       {link.name}
                     </a>
@@ -146,14 +160,24 @@ function Navbar() {
                       end
                       style={({ isActive }) => ({
                         fontFamily: "var(--font-heading)",
-                        fontSize: "0.9375rem",
-                        fontWeight: 500,
+                        fontSize: "0.875rem",
+                        fontWeight: 700,
                         color: isActive
+                          ? "#ffffff"
+                          : "var(--color-text-primary)",
+                        background: isActive
                           ? "var(--color-primary)"
-                          : "var(--color-text-secondary)",
-                        padding: "0.4rem 0.75rem",
+                          : "transparent",
+                        padding: "0.45rem 0.9rem",
                         borderRadius: "var(--radius-full)",
-                        transition: "color 0.2s ease",
+                        border: isActive
+                          ? "1.5px solid var(--color-border-dark, #000000)"
+                          : "1.5px solid transparent",
+                        boxShadow: isActive
+                          ? "2px 2px 0px #000000"
+                          : "none",
+                        transition: "all 0.2s ease",
+                        display: "inline-block",
                       })}
                     >
                       {link.name}
@@ -169,17 +193,18 @@ function Navbar() {
             onClick={toggleTheme}
             aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
             style={{
-              background: "rgba(var(--color-primary-rgb), 0.1)",
-              border: "1px solid rgba(var(--color-primary-rgb), 0.2)",
+              background: "var(--color-bg-pill)",
+              border: "2px solid var(--color-border)",
+              boxShadow: "2px 2px 0px var(--color-border-dark, #000000)",
               color: "var(--color-text-primary)",
               borderRadius: "var(--radius-full)",
-              width: "36px",
-              height: "36px",
+              width: "38px",
+              height: "38px",
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
               cursor: "pointer",
-              fontSize: "1rem",
+              fontSize: "1.1rem",
               transition: "transform 0.2s ease",
             }}
             onMouseEnter={handleToggleMouseEnter}
@@ -195,14 +220,19 @@ function Navbar() {
               aria-label="Toggle navigation menu"
               aria-expanded={isOpen}
               style={{
-                background: "transparent",
-                border: "none",
-                color: "var(--color-text-primary)",
-                fontSize: "1.5rem",
+                background: "var(--color-primary)",
+                border: "2px solid var(--color-border-dark, #000000)",
+                boxShadow: "2px 2px 0px #000000",
+                color: "#ffffff",
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                borderRadius: "var(--radius-full)",
+                width: "38px",
+                height: "38px",
                 cursor: "pointer",
-                padding: "0.25rem",
-                display: "flex",
+                display: "inline-flex",
                 alignItems: "center",
+                justifyContent: "center",
               }}
             >
               {isOpen ? "✕" : "☰"}
@@ -216,18 +246,18 @@ function Navbar() {
         <div
           style={{
             position: "absolute",
-            top: "calc(100% + 0.5rem)",
+            top: "calc(100% + 0.6rem)",
             left: "var(--space-md)",
             right: "var(--space-md)",
             background: isDark
-              ? "rgba(14, 18, 30, 0.96)"
+              ? "rgba(18, 24, 38, 0.98)"
               : "rgba(255, 255, 255, 0.98)",
             backdropFilter: "blur(20px)",
             WebkitBackdropFilter: "blur(20px)",
-            border: "var(--glass-border)",
-            borderRadius: "var(--radius-lg)",
+            border: "2px solid var(--color-border)",
+            borderRadius: "var(--radius-xl)",
             padding: "var(--space-lg)",
-            boxShadow: "0 20px 40px rgba(0, 0, 0, 0.4)",
+            boxShadow: "var(--shadow-retro-hover)",
             animation: "fadeIn 0.3s ease-out forwards",
           }}
         >
@@ -236,7 +266,7 @@ function Navbar() {
               listStyle: "none",
               display: "flex",
               flexDirection: "column",
-              gap: "1rem",
+              gap: "0.75rem",
             }}
           >
             {navLinks.map((link) => (
@@ -249,9 +279,11 @@ function Navbar() {
                       display: "block",
                       fontFamily: "var(--font-heading)",
                       fontSize: "1rem",
-                      fontWeight: 600,
+                      fontWeight: 700,
                       color: "var(--color-text-primary)",
-                      padding: "0.5rem 0",
+                      padding: "0.6rem 1rem",
+                      borderRadius: "var(--radius-md)",
+                      border: "1.5px solid var(--color-border)",
                     }}
                   >
                     {link.name}
@@ -264,11 +296,19 @@ function Navbar() {
                       display: "block",
                       fontFamily: "var(--font-heading)",
                       fontSize: "1rem",
-                      fontWeight: 600,
+                      fontWeight: 700,
                       color: isActive
-                        ? "var(--color-primary)"
+                        ? "#ffffff"
                         : "var(--color-text-primary)",
-                      padding: "0.5rem 0",
+                      background: isActive
+                        ? "var(--color-primary)"
+                        : "transparent",
+                      padding: "0.6rem 1rem",
+                      borderRadius: "var(--radius-md)",
+                      border: isActive
+                        ? "1.5px solid var(--color-border-dark, #000000)"
+                        : "1.5px solid var(--color-border)",
+                      boxShadow: isActive ? "2px 2px 0px #000000" : "none",
                     })}
                   >
                     {link.name}

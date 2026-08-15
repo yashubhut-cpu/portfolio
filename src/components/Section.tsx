@@ -32,36 +32,18 @@ function Section({
               alignItems: "center",
             }}
           >
-            {badge && (
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "0.4rem",
-                  padding: "0.35rem 0.9rem",
-                  borderRadius: "var(--radius-full)",
-                  background: "var(--color-bg-card)",
-                  border: "var(--glass-border)",
-                  color: "var(--color-primary)",
-                  fontSize: "0.8125rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.04em",
-                  marginBottom: "var(--space-sm)",
-                  textTransform: "uppercase",
-                }}
-              >
-                {badge}
-              </div>
-            )}
+            {badge && <div className="locale-badge">{badge}</div>}
             {title && (
               <HeadingTag
                 style={{
-                  fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)",
+                  fontSize: "clamp(1.85rem, 3.8vw, 2.75rem)",
                   fontWeight: 700,
                   letterSpacing: "-0.03em",
                   color: "var(--color-text-primary)",
                   lineHeight: "1.2",
+                  marginTop: badge ? "var(--space-sm)" : 0,
                   marginBottom: "var(--space-xs)",
+                  fontFamily: "var(--font-heading)",
                 }}
               >
                 {title}
@@ -72,8 +54,8 @@ function Section({
                 style={{
                   color: "var(--color-text-secondary)",
                   fontSize: "1.0625rem",
-                  maxWidth: "640px",
-                  lineHeight: "1.6",
+                  maxWidth: "680px",
+                  lineHeight: "1.65",
                 }}
               >
                 {subtitle}

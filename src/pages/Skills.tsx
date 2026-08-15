@@ -1,7 +1,6 @@
 import Section from "../components/Section";
 import SEO from "../components/SEO";
 import StructuredData from "../components/StructuredData";
-import useTheme from "../hooks/useTheme";
 import { useIsTablet } from "../hooks/useMediaQuery";
 
 interface SkillGroup {
@@ -12,7 +11,6 @@ interface SkillGroup {
 }
 
 function Skills() {
-  const { isDark } = useTheme();
   const isTablet = useIsTablet();
 
   const skillGroups: SkillGroup[] = [
@@ -108,7 +106,7 @@ function Skills() {
           {skillGroups.map((group, idx) => (
             <div
               key={idx}
-              className="glass-panel"
+              className="locale-card"
               style={{ padding: "var(--space-xl)" }}
             >
               <div
@@ -119,9 +117,24 @@ function Skills() {
                   marginBottom: "var(--space-sm)",
                 }}
               >
-                <span style={{ fontSize: "1.75rem" }}>{group.icon}</span>
+                <div
+                  style={{
+                    width: "44px",
+                    height: "44px",
+                    borderRadius: "var(--radius-md)",
+                    background: "var(--color-bg-pill)",
+                    border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "1.35rem",
+                  }}
+                >
+                  {group.icon}
+                </div>
                 <h3
                   style={{
+                    fontFamily: "var(--font-heading)",
                     fontSize: "1.25rem",
                     fontWeight: 700,
                     color: "var(--color-text-primary)",
@@ -147,15 +160,14 @@ function Skills() {
                   <span
                     key={sIdx}
                     style={{
-                      fontSize: "0.875rem",
-                      fontWeight: 500,
+                      fontFamily: "var(--font-heading)",
+                      fontSize: "0.8125rem",
+                      fontWeight: 700,
                       padding: "0.35rem 0.85rem",
                       borderRadius: "var(--radius-full)",
-                      background: isDark
-                        ? "rgba(255, 255, 255, 0.05)"
-                        : "rgba(0, 0, 0, 0.04)",
-                      border: "1px solid var(--color-border)",
-                      color: "var(--color-text-primary)",
+                      background: "var(--color-bg-pill)",
+                      border: "1.5px solid rgba(var(--color-primary-rgb), 0.3)",
+                      color: "var(--color-primary)",
                     }}
                   >
                     {skill}

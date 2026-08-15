@@ -63,22 +63,20 @@ function Projects() {
                 style={{
                   fontFamily: "var(--font-heading)",
                   fontSize: "0.875rem",
-                  fontWeight: 600,
+                  fontWeight: 700,
                   padding: "0.45rem 1.1rem",
                   borderRadius: "var(--radius-full)",
                   cursor: "pointer",
-                  transition: "all 0.2s ease",
+                  transition: "all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
                   border: isActive
-                    ? "1px solid var(--color-primary)"
-                    : "1px solid var(--color-border)",
+                    ? "2px solid var(--color-border-dark, #000000)"
+                    : "2px solid var(--color-border)",
                   background: isActive
                     ? "var(--color-primary)"
                     : "var(--color-bg-card)",
-                  color: isActive
-                    ? "hsl(222, 24%, 6%)"
-                    : "var(--color-text-secondary)",
+                  color: isActive ? "#ffffff" : "var(--color-text-primary)",
                   boxShadow: isActive
-                    ? "0 4px 14px rgba(var(--color-primary-rgb), 0.35)"
+                    ? "2px 2px 0px #000000"
                     : "none",
                 }}
               >
